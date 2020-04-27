@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9132BF98-EFE5-4A9E-BD9D-08BB8B397677}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>adonet</RootNamespace>
+    <AssemblyName>adonet</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Busqueda_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda_Detalle.Designer.cs">
+      <DependentUpon>Busqueda_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda_de_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda_de_Producto.Designer.cs">
+      <DependentUpon>Busqueda_de_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda_Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda_Venta.Designer.cs">
+      <DependentUpon>Busqueda_Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion_db.cs" />
+    <Compile Include="Detalle_de_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalle_de_Ventas.Designer.cs">
+      <DependentUpon>Detalle_de_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_de_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_de_Clientes.Designer.cs">
+      <DependentUpon>Registro_de_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda_Clientes.Designer.cs">
+      <DependentUpon>Busqueda_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos de Repuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos de Repuestos.Designer.cs">
+      <DependentUpon>Productos de Repuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sistemadebicirepuestosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemadebicirepuestosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemadebicirepuestosDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemadebicirepuestosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemadebicirepuestosDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemadebicirepuestosDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemadebicirepuestosDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemadebicirepuestosDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemadebicirepuestosDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemadebicirepuestosDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemadebicirepuestosDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemadebicirepuestosDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemadebicirepuestosDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemadebicirepuestosDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemadebicirepuestosDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemadebicirepuestosDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas_de_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas_de_Productos.Designer.cs">
+      <DependentUpon>Ventas_de_Productos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Busqueda_Detalle.resx">
+      <DependentUpon>Busqueda_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda_de_Producto.resx">
+      <DependentUpon>Busqueda_de_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda_Venta.resx">
+      <DependentUpon>Busqueda_Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalle_de_Ventas.resx">
+      <DependentUpon>Detalle_de_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_de_Clientes.resx">
+      <DependentUpon>Registro_de_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda_Clientes.resx">
+      <DependentUpon>Busqueda_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos de Repuestos.resx">
+      <DependentUpon>Productos de Repuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ventas_de_Productos.resx">
+      <DependentUpon>Ventas_de_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sistemadebicirepuestosDataSet.xsc">
+      <DependentUpon>sistemadebicirepuestosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemadebicirepuestosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet.xss">
+      <DependentUpon>sistemadebicirepuestosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet1.xsc">
+      <DependentUpon>sistemadebicirepuestosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemadebicirepuestosDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet1.xss">
+      <DependentUpon>sistemadebicirepuestosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet2.xsc">
+      <DependentUpon>sistemadebicirepuestosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemadebicirepuestosDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet2.xss">
+      <DependentUpon>sistemadebicirepuestosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet3.xsc">
+      <DependentUpon>sistemadebicirepuestosDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemadebicirepuestosDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet3.xss">
+      <DependentUpon>sistemadebicirepuestosDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet4.xsc">
+      <DependentUpon>sistemadebicirepuestosDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemadebicirepuestosDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet4.xss">
+      <DependentUpon>sistemadebicirepuestosDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet5.xsc">
+      <DependentUpon>sistemadebicirepuestosDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemadebicirepuestosDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet5.xss">
+      <DependentUpon>sistemadebicirepuestosDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet6.xsc">
+      <DependentUpon>sistemadebicirepuestosDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemadebicirepuestosDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet6.xss">
+      <DependentUpon>sistemadebicirepuestosDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet7.xsc">
+      <DependentUpon>sistemadebicirepuestosDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemadebicirepuestosDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemadebicirepuestosDataSet7.xss">
+      <DependentUpon>sistemadebicirepuestosDataSet7.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bicicleta-animada-png-5.png" />
+    <Content Include="sistemadebicirepuestos.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sistemadebicirepuestos_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>sistemadebicirepuestos.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
